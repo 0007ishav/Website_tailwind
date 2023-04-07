@@ -1,0 +1,86 @@
+:root {
+    --red: rgb(241, 25, 25);
+}
+#panda
+	{
+		position:relative;
+		top:10px;
+		background: url(https://git.io/JUW4L); 
+        overflow: hidden;
+		width:250px;
+		height:330px;		
+		animation:walking_animation 1s steps(12) infinite,move_forward 8s linear infinite;	
+	}
+    .bubble {
+        position: relative;
+        
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        width: 250px;
+        background: var(--red);
+        border-radius: 40px;
+        padding: 24px;
+        text-align: center;
+        color: #000;
+      }
+      
+      .bubble-bottom-left:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 24px solid var(--red);
+        border-right: 12px solid transparent;
+        border-top: 12px solid var(--red);
+        border-bottom: 20px solid transparent;
+        left: 32px;
+        bottom: -24px;
+      }
+    #text {
+        font-family: sans-serif;
+        display: block;
+        z-index: 1;
+        animation: move_forward 8s linear infinite;
+    }
+
+@keyframes walking_animation
+	{
+		0%{background-position:0px;}
+		100%{background-position:2995px;}
+	}
+
+@keyframes move_forward
+	{
+		0%{transform:translateX(-100px);}
+		100%{transform:translateX(1300px);}
+	}
+
+#street
+	{
+		position:relative;
+		top:5px;
+        width: 981px;
+        margin: 0;
+        padding: 0;
+		border-bottom:5px groove rgb(238, 18, 18);
+        box-shadow: 10px
+	}
+
+  
+    @media screen and (max-width: 1293px) {
+       #video {
+        display: none;
+       }
+    }
+
+    @media screen and (max-width: 790px) {
+        #v1 {
+            width: 240px;
+            padding: 0; margin: 0;
+        }
+       #para {
+        padding: 5px;
+        
+       }
+    }
