@@ -2,7 +2,7 @@
 
 This repository contains the code for a website built using HTML and Tailwind CSS.
 
-**Getting Started
+**Getting Started**
 
 To get a copy of the project up and running on your local machine, follow these steps:
 
